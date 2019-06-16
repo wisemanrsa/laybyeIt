@@ -1,0 +1,6 @@
+<div *ngIf="!displayItem">
+  <app-items-display [items]="items" (selectedItem)="handleSeletedItem($event)"></app-items-display>
+</div>
+<div *ngIf="displayItem">
+  <app-item [item]="selectedItem" (resetSelected)="handleResetSelected($event)"></app-item>
+</div>

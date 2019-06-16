@@ -10,7 +10,8 @@ const ITEMS: Item[] = [
     description:
       "2019 iPhone X. 6.5 inch display screen, 13 px rear & front camera, 64 GB internal storage",
     price: 17500,
-    imageUrl: "favicon.ico"
+    imageUrl: "favicon.ico",
+    store: "iStore"
   },
   {
     id: 1,
@@ -18,7 +19,8 @@ const ITEMS: Item[] = [
     description:
       "2019 Samsung Galaxy S10. 6.5 inch display screen, 13 px rear & front camera, 64 GB internal storage & fingerprint",
     price: 2400,
-    imageUrl: "favicon.ico"
+    imageUrl: "favicon.ico",
+    store: "Vodacom"
   },
   {
     id: 1,
@@ -26,7 +28,8 @@ const ITEMS: Item[] = [
     description:
       "Latest stunning Mac Book Pro with 32GB ram and 500GB internal storage. Upgrade your life with this high tech device",
     price: 36000,
-    imageUrl: "favicon.ico"
+    imageUrl: "favicon.ico",
+    store: "iStore"
   },
   {
     id: 1,
@@ -34,7 +37,8 @@ const ITEMS: Item[] = [
     description:
       "Never miss a moment with cannon full HD camera, capturing about 3 million pictures, very easy to use. Get it now.",
     price: 3000,
-    imageUrl: "favicon.ico"
+    imageUrl: "favicon.ico",
+    store: "CNA"
   },
   {
     id: 1,
@@ -42,7 +46,8 @@ const ITEMS: Item[] = [
     description:
       "Watch your favorite shows at anytime. Rewind, fast forward & record one show while watching the other. That's premium life",
     price: 6000,
-    imageUrl: "favicon.ico"
+    imageUrl: "favicon.ico",
+    store: "PEP Store"
   },
   {
     id: 1,
@@ -50,7 +55,8 @@ const ITEMS: Item[] = [
     description:
       "55 inch Full HD Smart TV. Comes with NetFlix, Showmax, Cell C Black and all installed with a free subscription of 12 months. Binge on. Limited offer",
     price: 1500,
-    imageUrl: "favicon.ico"
+    imageUrl: "favicon.ico",
+    store: "Game Furniture"
   }
 ];
 

@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { ItemsComponent } from "./componets/items/items.component";
+import { ItemsDisplayComponent } from "./componets/items-display/items-display.component";
+import { ItemComponent } from "./componets/item/item.component";
+import { ItemsManagerComponent } from "./componets/items-manager/items-manager.component";
 
 const routes: Routes = [
   {
@@ -10,7 +12,11 @@ const routes: Routes = [
   },
   {
     path: "items",
-    component: ItemsComponent
+    component: ItemsManagerComponent
+  },
+  {
+    path: "item",
+    component: ItemComponent
   }
 ];
 

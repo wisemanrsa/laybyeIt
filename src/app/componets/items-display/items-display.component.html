@@ -1,0 +1,12 @@
+<div class="container">
+  <app-animation-text [text]="text"></app-animation-text>
+  <div class="row">
+    <div class="imgbox" *ngFor="let item of items" (click)="selectItem(item)">
+
+      <div id="cat1" class="catimage">
+        <p style="color: rgb(125, 216, 125)">{{item.name}}</p>
+        <img src="{{item.imageUrl}}" height="200" width="200">
+      </div>
+    </div>
+  </div>
+</div>

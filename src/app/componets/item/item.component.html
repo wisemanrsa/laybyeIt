@@ -1,0 +1,56 @@
+<div class="bio-info" *ngIf="item">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bio-image">
+            <img src="{{item.imageUrl}}" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="bio-content">
+        <h1>{{item.name}}</h1>
+        <h6>{{item.description}}</h6>
+        <p>Only R{{item.price}}</p>
+        <h6>Posted by: {{item.store}}</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="bio-content">
+        <h1>Fill In Below</h1>
+        <form #form="ngForm">
+          <div class="form-group">
+            <label for="number">Contact Number:</label>
+            <input type="number" class="form-control" id="number" name="number" placeholder="Your cellphone number"
+              #number="ngModel" required [(ngModel)]="contactNumber">
+            <div [hidden]="number.valid || number.pristine" class="alert alert-danger">
+              Contact number is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Your name..."
+              [ngModel]="contactName" required #name="ngModel">
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              Your name is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="months">Months To Pay</label>
+            <input type="number" class="form-control" name="months" id="months" [(ngModel)]="months">
+          </div>
+          <button class="btn btn-primary" type="submit" [disabled]="!form.valid" (click)="form.reset();">Apply
+            Now</button>
+          <button class="btn btn-danger ml-2" type="button" (click)="goHome()"> Never Mind</button>
+        </form>
+        <h6 style="color: orangered">
+          You will be paying R{{(item.price / (months ? months : 1)) | number: '1.2-2'}} p/m for
+          {{(months ? months : 1)}} month(s)
+        </h6>
+      </div>
+    </div>
+  </div>
+
+</div>
