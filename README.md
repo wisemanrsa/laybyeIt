@@ -1,5 +1,11 @@
 # LaybyeIt
 
+#Running Project
+1. After cloning project using a command line, run: `npm i` on the project root folder
+2. Run `ng build`
+3. Run `ng serve`
+4. Project should be running on localhost:4200
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Development server
