@@ -13,10 +13,6 @@ const routes: Routes = [
   {
     path: "items",
     component: ItemsManagerComponent
-  },
-  {
-    path: "item",
-    component: ItemComponent
   }
 ];
 
